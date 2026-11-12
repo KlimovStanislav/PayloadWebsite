@@ -25,5 +25,9 @@ GAME = {
 def index():
     return render_template("index.html", game=GAME)
 
+@app.route("/changelog")
+def changelog():
+    return ""
+
 if __name__ == "__main__":
     app.run(debug=True)
